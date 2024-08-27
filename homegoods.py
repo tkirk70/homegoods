@@ -160,3 +160,9 @@ st.download_button(label="Download Home Goods template as excel file",
                        data=excel,
                        file_name=f"current_homegoods.xlsx",
                        mime='application/octet-stream')
+
+# Custom CSS style for the text
+custom_style = '<div style="text-align: right; font-size: 20px;">✨ A TDS Application ✨</div>'
+
+# Render the styled text using st.markdown
+st.markdown(custom_style, unsafe_allow_html=True)
