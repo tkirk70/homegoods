@@ -23,7 +23,7 @@ st.caption("""
 uploaded_file = st.file_uploader("Choose a file", type=["xlsx"])
 
 if uploaded_file is not None:
-    st.write('Preview of DataFrame')
+    st.write('Preview of Upload')
     try:
         df = pd.read_excel(uploaded_file)
         # Assuming df is your DataFrame
@@ -77,6 +77,9 @@ if uploaded_file is not None:
 
     cust_sku_dict = dict(zip(SKU, Cust_SKU))
     result['Cust_SKU'] = result['SKU'].map(cust_sku_dict)
+
+    st.write('Preview of Download')
+    st.write(result)
 
     # Convert DataFrame to BytesIO object
     output = BytesIO()
