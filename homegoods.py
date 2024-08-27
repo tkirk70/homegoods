@@ -22,9 +22,18 @@ st.caption("""
          """)
 
 uploaded_file = st.file_uploader("Choose a file", type=["xlsx"])
-# Can be used wherever a "file-like" object is accepted:
-df = pd.read_excel(uploaded_file)
-st.write(df)
+
+if uploaded_file is not None:
+    st.write('Preview of DataFrame')
+    try:
+        # Can be used wherever a "file-like" object is accepted:
+        df = pd.read_excel(uploaded_file)
+        st.write(df)
+    except Exception as e:
+        st.write('An Error Occured.')
+        st.error(f"Error reading the file: {e}")
+            
+
 
 df['Ship To Zip'] = df['Ship To Zip'].astype(str)
 
