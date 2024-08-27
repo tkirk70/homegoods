@@ -26,6 +26,8 @@ if uploaded_file is not None:
     st.write('Preview of DataFrame')
     try:
         df = pd.read_excel(uploaded_file)
+        # Assuming df is your DataFrame
+        df['Transaction ID'] = df['Transaction ID'].apply(lambda x: f'{x:.0f}')
         st.write(df)
     except Exception as e:
         st.write('An Error Occurred.')
