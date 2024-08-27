@@ -11,19 +11,20 @@ from io import BytesIO
 st.title("The Home Good Database App 🗂️ ")
 
 st.caption("""
-         In Extensiv:
-         \nExport the transaction as an excel file.
-         \nUpload to this application
-         \nDownload the transformed file.
-         \nReplace the current_homegoods file in the tds folder with the downloaded one.
-         \nOpen BarTender file and make sure it is connected to the DataBase.
-         \Run print preview before printing.
+         **In Extensiv**:
+         \n1. Export the transaction as an excel file.
+         \n2. Upload to this application.
+         \n3. Download the transformed file.
+         \n4. Replace the current_homegoods file in the tds folder with the downloaded one.
+         \n5. Open BarTender file and make sure it is connected to the DataBase.
+         \n6. Run print preview before printing.
+         \n7. Enjoy!
          """)
 
 uploaded_file = st.file_uploader("Choose a file")
 # Can be used wherever a "file-like" object is accepted:
 df = pd.read_excel(uploaded_file)
-st.write(dataframe)
+st.write(df)
 
 df['Ship To Zip'] = df['Ship To Zip'].astype(str)
 
