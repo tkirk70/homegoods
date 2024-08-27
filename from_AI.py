@@ -9,7 +9,7 @@ from io import BytesIO
 
 image = 'https://www.homegoods.com/img/header/homegoods-logo.svg'
 st.image(image, use_column_width='auto', clamp=False, channels="RGB", output_format="auto")
-st.image('Main Body Logo', icon_image=ICON_RED)
+
 st.title("The Home Goods Database App 🗂️")
 
 st.caption("""
