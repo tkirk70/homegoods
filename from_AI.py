@@ -7,7 +7,7 @@ from openpyxl.worksheet.table import Table, TableStyleInfo
 from openpyxl.utils.dataframe import dataframe_to_rows
 from io import BytesIO
 
-st.logo(LOGO_URL_LARGE, link='https://www.homegoods.com/img/header/homegoods-logo.svg', icon_image=None)
+st.logo(link, link='https://www.homegoods.com/img/header/homegoods-logo.svg', icon_image=None)
 st.title("The Home Goods Database App 🗂️")
 
 st.caption("""
