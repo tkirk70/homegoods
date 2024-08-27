@@ -23,7 +23,7 @@ st.caption("""
 
 uploaded_file = st.file_uploader("Choose a file")
 # Can be used wherever a "file-like" object is accepted:
-df = pd.read_excel(uploaded_file, dytpe='str')
+df = pd.read_excel(uploaded_file)
 st.write(df)
 
 df['Ship To Zip'] = df['Ship To Zip'].astype(str)
