@@ -8,7 +8,7 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 from io import BytesIO
 
 ICON_RED = 'https://www.homegoods.com/img/header/homegoods-logo.svg'
-st.logo('Main Body Logo', link='https://www.homegoods.com/img/header/homegoods-logo.svg', icon_image=ICON_RED)
+st.logo('Main Body Logo', icon_image=ICON_RED)
 st.title("The Home Goods Database App 🗂️")
 
 st.caption("""
