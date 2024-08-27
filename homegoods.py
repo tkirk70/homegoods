@@ -8,7 +8,7 @@ from openpyxl.utils.dataframe import dataframe_to_rows  # Import the missing fun
 from io import BytesIO
 
 
-st.title("The Home Good Database App 🗂️ ")
+st.title("The Home Goods Database App 🗂️ ")
 
 st.caption("""
          **In Extensiv**:
