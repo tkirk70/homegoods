@@ -90,5 +90,7 @@ if uploaded_file is not None:
     )
 
 # Custom CSS style for the text
-custom_style = '<div style="text-align: center;">Your custom text here</div>'
+custom_style = '<div style="text-align: right; font-size: 20px;">✨ A TDS Application ✨</div>'
+
+# Render the styled text using st.markdown
 st.markdown(custom_style, unsafe_allow_html=True)
