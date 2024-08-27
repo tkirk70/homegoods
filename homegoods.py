@@ -165,7 +165,7 @@ if uploaded_file is not None:
     excel = result.to_excel('current_homegoods.xlsx', index=None)
     
     
-    st.download_button(label="Download Home Goods template as excel file", data=excel, file_name=f"current_homegoods.xlsx", mime='application/octet-stream')
+    st.download_button(label="Download Home Goods template as excel file", data=excel, file_name=f"current_homegoods", mime='application/octet-stream')
 
 # Custom CSS style for the text
 custom_style = '<div style="text-align: right; font-size: 20px;">✨ A TDS Application ✨</div>'
