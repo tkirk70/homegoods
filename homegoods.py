@@ -21,7 +21,7 @@ st.caption("""
          \n7. Enjoy!
          """)
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Choose a file", type=["xlsx"])
 # Can be used wherever a "file-like" object is accepted:
 df = pd.read_excel(uploaded_file)
 st.write(df)
