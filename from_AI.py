@@ -19,7 +19,7 @@ st.caption("""
     2. Upload to this application.
     3. Download the transformed file.\n
     **On Print Station Computer logged in as PickPack**:\n
-    4. Replace the current_homegoods file in this folder: C:\\Users\\PickPack\\Desktop\\HomeGoods.
+    4. Replace the current_homegoods.xlsx file in this folder: C:\\Users\\PickPack\\Desktop\\HomeGoods.
     5. Open BarTender file C:\\Users\\PickPack\\Desktop\\BarTender Suite\\HomeGoods\\homegoods_test.btw.
     6. Make sure it is connected to the DataBase and refresh.
     7. Run print preview before printing.
