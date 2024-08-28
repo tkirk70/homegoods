@@ -18,9 +18,10 @@ st.caption("""
 2. Upload to this application.
 3. Download the transformed file.
 4. Replace the current_homegoods file in this folder: C:\Users\PickPack\Desktop\HomeGoods.
-5. Open BarTender file C:\Users\PickPack\Desktop\BarTender Suite\HomeGoods\homegoods_test.btw and make sure it is connected to the DataBase.
-6. Run print preview before printing.
-7. Enjoy!
+5. Open BarTender file C:\Users\PickPack\Desktop\BarTender Suite\HomeGoods\homegoods_test.btw.
+6. Make sure it is connected to the DataBase and refresh.
+7. Run print preview before printing.
+8. Enjoy!
 """)
 
 uploaded_file = st.file_uploader("Choose a file", type=["xlsx"])
