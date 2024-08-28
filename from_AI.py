@@ -14,14 +14,14 @@ st.title("The Home Goods Database App 🗂️")
 
 st.caption("""
     **In Extensiv**:
-    \n1. Export the transaction as an excel file.
-    \n2. Upload to this application.
-    \n3. Download the transformed file.
-    \n4. Replace the current_homegoods file in this folder: C:\\Users\\PickPack\\Desktop\\HomeGoods.
-    \n5. Open BarTender file C:\\Users\\PickPack\\Desktop\\BarTender Suite\\HomeGoods\\homegoods_test.btw.
-    \n6. Make sure it is connected to the DataBase and refresh.
-    \n7. Run print preview before printing.
-    \n8. Enjoy!
+    1. Export the transaction as an excel file.
+    2. Upload to this application.
+    3. Download the transformed file.
+    4. Replace the current_homegoods file in this folder: C:\\Users\\PickPack\\Desktop\\HomeGoods.
+    5. Open BarTender file C:\\Users\\PickPack\\Desktop\\BarTender Suite\\HomeGoods\\homegoods_test.btw.
+    6. Make sure it is connected to the DataBase and refresh.
+    7. Run print preview before printing.
+    8. Enjoy!
 """)
 
 uploaded_file = st.file_uploader("Choose a file", type=["xlsx"])
