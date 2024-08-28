@@ -13,7 +13,7 @@ st.image(image, use_column_width='auto', clamp=False, channels="RGB", output_for
 st.title("The Home Goods Database App 🗂️")
 
 st.caption("""
-    **In Extensiv**:
+    **In Extensiv using Chrome Browser logged in as Traffic**:
     1. Export the transaction as an excel file.\n
     **In this App**:\n
     2. Upload to this application.
