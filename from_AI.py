@@ -83,6 +83,27 @@ if uploaded_file is not None:
 
     cust_sku_dict = dict(zip(SKU, Cust_SKU))
     result['Cust_SKU'] = result['SKU'].map(cust_sku_dict)
+    
+    # Resetting the index
+    result = result.reset_index()
+    # Initialize the serial number column
+    result['Serial'] = 0
+
+    # Initialize the serial number
+    x = 1
+
+    # Iterate over unique SKUs
+    for sku in result['SKU'].unique():
+        # Filter rows for the current SKU
+        sku_rows = result[result['SKU'] == sku].index
+        
+        # Assign serial numbers to the rows of the current SKU
+        for idx in sku_rows:
+            result.at[idx, 'Serial'] = f'{x} of {result.at[idx, "Quantity"]}'
+            x += 1
+        
+        # Reset the serial number for the next SKU
+        x = 1
 
     st.write('Preview of Download')
     st.write(result)
