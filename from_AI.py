@@ -8,7 +8,7 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 from io import BytesIO
 
 image = 'https://www.homegoods.com/img/header/homegoods-logo.svg'
-st.image(image, use_column_width='auto', clamp=False, channels="RGB", output_format="auto")
+st.image(image, use_container_width=True, clamp=False, channels="RGB", output_format="auto")
 
 st.title("The Home Goods Database App 🗂️")
 
